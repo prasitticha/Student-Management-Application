@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 namespace Student_Management_Application
 {
     internal class Student
-    {
+    {   
         private string _id;
         private string _name;
         private string _major;
 
         //constructor
-        public Student(string id,
-            string name,
-            string major)
+        public Student(string id, string name, string major)
         {
             this._id = id;
             this._name = name;
