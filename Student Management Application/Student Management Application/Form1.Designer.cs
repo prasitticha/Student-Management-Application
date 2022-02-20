@@ -60,11 +60,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.LightSalmon;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(854, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(719, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,20 +76,20 @@
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
@@ -95,17 +97,17 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnID,
             this.ColumnName,
             this.ColumnMajor,
             this.ColumnGPA});
-            this.dataGridView1.Location = new System.Drawing.Point(455, 46);
+            this.dataGridView1.Location = new System.Drawing.Point(258, 48);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(341, 229);
+            this.dataGridView1.Size = new System.Drawing.Size(444, 260);
             this.dataGridView1.TabIndex = 2;
             // 
             // ColumnID
@@ -131,14 +133,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(28, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 15);
+            this.label1.Size = new System.Drawing.Size(18, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Id";
             // 
             // textBoxId
             // 
+            this.textBoxId.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxId.Location = new System.Drawing.Point(72, 48);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(159, 23);
@@ -146,6 +150,7 @@
             // 
             // textBoxName
             // 
+            this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxName.Location = new System.Drawing.Point(72, 77);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(159, 23);
@@ -154,24 +159,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(28, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 15);
+            this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 6;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(28, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Major";
             // 
             // comboBoxMajor
             // 
             this.comboBoxMajor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMajor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBoxMajor.FormattingEnabled = true;
             this.comboBoxMajor.Items.AddRange(new object[] {
             "CIS",
@@ -183,6 +191,7 @@
             // 
             // textBoxGPA
             // 
+            this.textBoxGPA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxGPA.Location = new System.Drawing.Point(72, 135);
             this.textBoxGPA.Name = "textBoxGPA";
             this.textBoxGPA.Size = new System.Drawing.Size(159, 23);
@@ -191,9 +200,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(28, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 15);
+            this.label4.Size = new System.Drawing.Size(30, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "GPA";
             // 
@@ -205,9 +215,10 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBoxGPAx);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 231);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(12, 193);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(268, 149);
+            this.groupBox1.Size = new System.Drawing.Size(228, 115);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -240,7 +251,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(16, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 15);
+            this.label6.Size = new System.Drawing.Size(31, 15);
             this.label6.TabIndex = 16;
             this.label6.Text = "Max";
             // 
@@ -256,12 +267,13 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(16, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 15);
+            this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 14;
             this.label5.Text = "GPAx";
             // 
             // buttonADD
             // 
+            this.buttonADD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonADD.Location = new System.Drawing.Point(72, 164);
             this.buttonADD.Name = "buttonADD";
             this.buttonADD.Size = new System.Drawing.Size(159, 23);
@@ -274,7 +286,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 392);
+            this.BackColor = System.Drawing.Color.Blue;
+            this.ClientSize = new System.Drawing.Size(719, 322);
             this.Controls.Add(this.buttonADD);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBoxGPA);
@@ -289,7 +302,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "A";
+            this.Text = "Student Management Application";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

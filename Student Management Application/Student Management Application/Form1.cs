@@ -11,28 +11,7 @@ namespace Student_Management_Application
             InitializeComponent();
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "CSV (*.csv) | *.csv";
-            if(openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string[] readallline = File.ReadAllLines(openFileDialog.FileName);
-
-                for(int i = 0; i < readallline.Length; i++)
-                {
-                    string studentRAW = readallline[i];
-                    string[] studentSplited = studentRAW.Split(',');
-                    Student student = new Student(studentSplited[0], studentSplited[1], studentSplited[2]);
-                    //addDataToGridView(student);
-                    //TODO: Add Stodent object to DataGridView
-                }
-
-                //TODO : valculate max, min, gpax
-
-            }
-        }
         private void addDataToGridView(string id, string name, string major)
         {
             this.dataGridView1.Rows.Add(new string[] { "id", "name", "major" });
@@ -99,6 +78,29 @@ namespace Student_Management_Application
 
             double min = oSMA.gatMin();
             textBoxMinGPA.Text = min.ToString();
+
+            textBoxId.Text = "";
+            textBoxName.Text = "";
+            comboBoxMajor.Text = "";
+            textBoxGPA.Text = "";
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "CSV (*.csv) | *.csv";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string[] readAllLine = File.ReadAllLines(openFileDialog.FileName);
+
+                string readAllText = File.ReadAllText(openFileDialog.FileName);
+                for (int i = 0; i < readAllLine.Length; i++)
+                {
+                    string allDATARAW = readAllLine[i];
+                    string[] allDATASplited = allDATARAW.Split(',');
+                    this.dataGridView1.Rows.Add(allDATASplited[0], allDATASplited[1], allDATASplited[2]);
+                }
+            }
         }
 
         /*
